@@ -14,9 +14,6 @@ To start Metro, run the following command from the _root_ of your React Native p
 # using npm
 npm start
 
-# OR using Yarn
-yarn start
-```
 
 ## Step 2: Start your Application
 
@@ -28,19 +25,12 @@ Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _roo
 # using npm
 npm run android
 
-# OR using Yarn
-yarn android
-```
-
 ### For iOS
 
 ```bash
 # using npm
 npm run ios
 
-# OR using Yarn
-yarn ios
-```
 
 If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
 
@@ -64,9 +54,15 @@ You've successfully run and modified your React Native App. :partying_face:
 - If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
 - If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
 
-# Troubleshooting
+## Troubleshooting
 
 If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+
+- Can not build iOS app?
+   . pod deintegrate && pod install from /ios folder
+   . CMD+Shift+K from XCode project
+   . rm -rf ios/.xcode.env.local (https://github.com/facebook/react-native/issues/42221#issuecomment-1895955415)
+   . from XCode, go to Build Settings and check User Script Sandboxing's value is NO 
 
 # Learn More
 
